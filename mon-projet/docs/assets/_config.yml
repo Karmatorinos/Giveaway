@@ -1,4 +1,6 @@
 # _config.yml
+source: docs
+destination: docs/_site
 
 # Configuration de Jekyll pour le CSS et les fichiers SCSS
 sass:
