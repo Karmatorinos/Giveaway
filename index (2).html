@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giveaways</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Site Web</title>
+  <link rel="stylesheet" href="assets/css/style.css">  <!-- Lien vers le CSS -->
 </head>
 <body>
     <h1>Giveaways en cours !</h1>
@@ -75,10 +76,10 @@
             timers[giveawayId] = setInterval(updateTimers, 1000); // Démarre un nouveau timer
         }
 
-        // Initialiser les giveaways avec leurs jours respectifs
+        // Initialiser le giveaway avec les jours respectifs
         createCountdown(1, 10); // Giveaway 1 : 10 jours
 
-        // Modifier le nom d'un giveaway
+        // Modifier le nom du giveaway
         function updateTitle(giveawayNumber) {
             const newTitle = document.getElementById(`newTitle${giveawayNumber}`).value;
             if (newTitle.trim()) {
