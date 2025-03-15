@@ -4,26 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giveaways</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        .giveaway {
-            margin-bottom: 30px;
-            padding: 20px;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-        }
-        .giveaway h2 {
-            font-size: 28px;
-        }
-        .giveaway p {
-            font-size: 24px;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
     <h1>Giveaways en cours !</h1>
@@ -36,46 +16,6 @@
         <button onclick="updateTitle(1)">Modifier le nom</button>
         <input type="number" id="newDays1" placeholder="Entrer le nombre de jours" min="1" />
         <button onclick="updateDaysRemaining(1)">Modifier les jours</button>
-    </div>
-
-    <!-- Giveaway 2 -->
-    <div class="giveaway" id="giveaway2">
-        <h2 id="title2">Giveaway 2</h2>
-        <p id="countdown2"></p>
-        <input type="text" id="newTitle2" placeholder="Nouveau nom pour Giveaway 2" />
-        <button onclick="updateTitle(2)">Modifier le nom</button>
-        <input type="number" id="newDays2" placeholder="Entrer le nombre de jours" min="1" />
-        <button onclick="updateDaysRemaining(2)">Modifier les jours</button>
-    </div>
-
-    <!-- Giveaway 3 -->
-    <div class="giveaway" id="giveaway3">
-        <h2 id="title3">Giveaway 3</h2>
-        <p id="countdown3"></p>
-        <input type="text" id="newTitle3" placeholder="Nouveau nom pour Giveaway 3" />
-        <button onclick="updateTitle(3)">Modifier le nom</button>
-        <input type="number" id="newDays3" placeholder="Entrer le nombre de jours" min="1" />
-        <button onclick="updateDaysRemaining(3)">Modifier les jours</button>
-    </div>
-
-    <!-- Giveaway 4 -->
-    <div class="giveaway" id="giveaway4">
-        <h2 id="title4">Giveaway 4</h2>
-        <p id="countdown4"></p>
-        <input type="text" id="newTitle4" placeholder="Nouveau nom pour Giveaway 4" />
-        <button onclick="updateTitle(4)">Modifier le nom</button>
-        <input type="number" id="newDays4" placeholder="Entrer le nombre de jours" min="1" />
-        <button onclick="updateDaysRemaining(4)">Modifier les jours</button>
-    </div>
-
-    <!-- Giveaway 5 -->
-    <div class="giveaway" id="giveaway5">
-        <h2 id="title5">Giveaway 5</h2>
-        <p id="countdown5"></p>
-        <input type="text" id="newTitle5" placeholder="Nouveau nom pour Giveaway 5" />
-        <button onclick="updateTitle(5)">Modifier le nom</button>
-        <input type="number" id="newDays5" placeholder="Entrer le nombre de jours" min="1" />
-        <button onclick="updateDaysRemaining(5)">Modifier les jours</button>
     </div>
 
     <script>
@@ -137,10 +77,6 @@
 
         // Initialiser les giveaways avec leurs jours respectifs
         createCountdown(1, 10); // Giveaway 1 : 10 jours
-        createCountdown(2, 5);  // Giveaway 2 : 5 jours
-        createCountdown(3, 1);  // Giveaway 3 : 1 jour
-        createCountdown(4, 7);  // Giveaway 4 : 7 jours
-        createCountdown(5, 3);  // Giveaway 5 : 3 jours
 
         // Modifier le nom d'un giveaway
         function updateTitle(giveawayNumber) {
