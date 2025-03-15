@@ -1,9 +1,0 @@
-# _config.yml
-
-# Configuration de Jekyll pour le CSS et les fichiers SCSS
-sass:
-  sass_dir: assets/css  # Spécifie où sont les fichiers SCSS ou CSS
-
-# Paramètres supplémentaires, comme le nom de ton site, etc.
-title: Mon Site Web
-description: Ce site est généré avec Jekyll
