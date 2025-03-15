@@ -1,11 +1,9 @@
-# _config.yml
-source: docs
-destination: docs/_site
+title: Mon site Jekyll
+description: Un simple site généré avec Jekyll.
+baseurl: ""
+url: "http://example.com"  # Remplace par l'URL de ton site si tu la connais.
 
-# Configuration de Jekyll pour le CSS et les fichiers SCSS
-sass:
-  sass_dir: assets/css  # Spécifie où sont les fichiers SCSS ou CSS
-
-# Paramètres supplémentaires, comme le nom de ton site, etc.
-title: Mon Site Web
-description: Ce site est généré avec Jekyll
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
